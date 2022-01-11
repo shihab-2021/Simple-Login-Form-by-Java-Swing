@@ -72,7 +72,9 @@ class SimpleLoginForm extends JFrame{
                 }
                 else{
                     JOptionPane.showMessageDialog(null, "Welcome "+userName);
-                    System.exit(0);
+                    dispose();
+                    AfterLoginPage frame = new AfterLoginPage();
+                    frame.setVisible(true);
                 }
             }
         });
